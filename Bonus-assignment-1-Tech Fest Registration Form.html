@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Fest Registration Form</title>
+</head>
+<body>
+
+  <h1 style="text-align: center;">College Tech Fest Registration</h1>
+
+  <form action="/submit" method="post" style="width: 60%; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <label for="department">Department:</label><br>
+    <select id="department" name="department" required>
+      <option value="">--Select Department--</option>
+      <option value="CSE">Computer Science</option>
+      <option value="ECE">Electronics</option>
+      <option value="MECH">Mechanical</option>
+      <option value="CIVIL">Civil</option>
+      <option value="IT">Information Technology</option>
+    </select><br><br>
+
+    <label>Events You Want to Participate In:</label><br>
+    <input type="checkbox" id="coding" name="events" value="Coding">
+    <label for="coding">Coding Challenge</label><br>
+    <input type="checkbox" id="quiz" name="events" value="Quiz">
+    <label for="quiz">Tech Quiz</label><br>
+    <input type="checkbox" id="robotics" name="events" value="Robotics">
+    <label for="robotics">Robotics</label><br>
+    <input type="checkbox" id="uiux" name="events" value="UI/UX">
+    <label for="uiux">UI/UX Design</label><br><br>
+
+    <label for="comments">Any Special Requirements or Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Let us know if you have any special needs..."></textarea><br><br>
+
+    <input type="submit" value="Register">
+
+  </form>
+
+</body>
+</html>
